@@ -7,7 +7,7 @@ public class Algorithms
     {
         if (k < 0 || k >= a.length)
         {
-            throw new NoSuchElementException();
+            throw new IllegalArgumentException();
         }
         int[] b = Arrays.copyOf(a, a.length);
         Arrays.sort(b);
